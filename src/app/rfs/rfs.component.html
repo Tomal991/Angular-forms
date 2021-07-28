@@ -1,0 +1,27 @@
+<form [formGroup]="employeeForm">
+  <label for="">
+    Employee Name:
+    <input type="text" name="" id="" formControlName="Name" />
+  </label>
+  <br />
+  <br />
+  <label for="">
+    Designation:
+    <input type="text" name="" id="" formControlName="Designation" />
+  </label>
+  <br />
+  <h2>Employee Address</h2>
+  <label for="">
+    Employee Name:
+    <input type="text" name="" id="" formControlName="country" />
+  </label>
+  <br />
+  <br />
+  <label for="">
+    Designation:
+    <input type="text" name="" id="" formControlName="city" />
+  </label>
+</form>
+<br />
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()"></form>
+<button type="submit">Submit</button>
